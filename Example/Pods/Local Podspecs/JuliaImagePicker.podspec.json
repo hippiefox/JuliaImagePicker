@@ -12,11 +12,11 @@
     "HippieFox": "foxhippie5@gmail.com"
   },
   "source": {
-    "git": "https://github.com/HippieFox/JuliaImagePicker.git",
+    "git": "https://github.com/hippiefox/JuliaImagePicker.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
   "source_files": "JuliaImagePicker/Classes/**/*",
   "dependencies": {
