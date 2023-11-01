@@ -1,0 +1,6 @@
+framework module JuliaImagePicker {
+  umbrella header "JuliaImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

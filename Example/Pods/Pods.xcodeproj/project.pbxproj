@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0226EDF1150003E5181FD62EDF9DD8F8 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */; };
+		0A02F15E151ACAB703BA62636CD01DB8 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */; };
+		0A614D3DC7E933F81BD932A244636A55 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */; };
+		0B81429FFC8D7AE65F0007F7EE986407 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */; };
+		0E7FE25865E3672A2848D7E2094D2E6B /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */; };
+		11B849C81E53C1039AE21D157342E0C2 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */; };
+		11D1BC4CA325A205E9C067C354983423 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */; };
+		12DE95BEEF871D0945B29BF35A6D3D11 /* JuliaPrototypeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6723A87D70141E9D3E42B85664AB6A3 /* JuliaPrototypeImageCell.swift */; };
+		1603C0EA2AF0AA3B00B7B007 /* JuliaImagePickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603C0E92AF0AA3B00B7B007 /* JuliaImagePickerConfig.swift */; };
+		1603C0EC2AF0AB0D00B7B007 /* JuliaImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603C0EB2AF0AB0D00B7B007 /* JuliaImagePickerView.swift */; };
+		1603C0EE2AF0ABF300B7B007 /* JuliaPhotosAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603C0ED2AF0ABF300B7B007 /* JuliaPhotosAccess.swift */; };
+		1603C0F02AF0ACA300B7B007 /* JuliaSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603C0EF2AF0ACA300B7B007 /* JuliaSourceManager.swift */; };
+		1603C0F22AF0ACCF00B7B007 /* JuliaSourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1603C0F12AF0ACCF00B7B007 /* JuliaSourceItem.swift */; };
+		2044593CA1D09886AFC660A6D7D614C2 /* Pods-JuliaImagePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F4B71775A3966FC9EBF36988A07A28 /* Pods-JuliaImagePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26316253F6DE72C3370636CF4ADD63B3 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */; };
+		26EA71C3626607E1162EAC02FBE58C42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2AF6F8C323A0E4460356BD83E5DC3ECD /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */; };
+		31C54B4088DB77E2A6E407EDF800A780 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */; };
+		35285506203A72F6EC81A1AF71B182E3 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */; };
+		3E97BB392AECDEDD9138C85EBD8D978E /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */; };
+		3F007FDF4DFFA1071492CC47F0EC3E50 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */; };
+		491A3C1FA02D7F4C93F796E52183F8C3 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */; };
+		49FBC3A75F09480A3FBAB65EA26F65A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4D32062F3E04E67CA7B64E2A2890ABD2 /* ConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */; };
+		53B04A30C7898754D0DFEC1C19799BFD /* Pods-JuliaImagePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EB0C117B78CDE911EA67B316D0310B /* Pods-JuliaImagePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5581EE2D260D4451307D34546C947FB9 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */; };
+		56240FFBB993B17469D6D5B989562B6C /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */; };
+		56A9451392F1128905162D556063E42C /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */; };
+		598B47CCCB6487274D7549C32B229F08 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */; };
+		5A9E20B47CB5FD375F845F5ED27DBF1E /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */; };
+		6348AD600A66B4F9B5192EFEE0B44264 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */; };
+		66CC7A589741E704372BB17F025BE728 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */; };
+		674373FC45AF6B4576B904E51023446C /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */; };
+		6FFBFA924D31AE74A27332BB7CA5FE2D /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */; };
+		70CBF128245373CB66B69D14F1E4BB63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7554717C3FD530A4B54F93460E4908A1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */; };
+		7CF2EFD331C0E1D5322C5C66802C5BBC /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */; };
+		7F800B20AE494083D2C9A45EEEE6B9C0 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */; };
+		838CD2C6E8751A3D3753A7E4B881D860 /* Pods-JuliaImagePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829280C66098FFD72AA40B6C04CE91B1 /* Pods-JuliaImagePicker_Tests-dummy.m */; };
+		83E54C6B16F02E22467B5E1F71A2C9D3 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */; };
+		83E567E6ED929A355A04D88BC05B6543 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */; };
+		8646AF71AD364F51C37A9244364665C3 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */; };
+		8C8B3393BADEEF9788DBCB5138B7399A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */; };
+		8CD758506735C70BD414489A6AA1BB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A2C719A5B0F6D74847B9B81DFB8800E1 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */; };
+		A39689793D52CF6E98AD4DA9D8E9F96A /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */; };
+		A6F40475B6F00B584019CC253C9C25BE /* JuliaImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B65A7C892619DECA4D2142A700FA428E /* JuliaImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9E289E1A234390862E7AA8EAB18CBD3 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */; };
+		B588E988099F30C3A7ED930F153AF7D6 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */; };
+		CBBF1F2473FC24B3F6F03509CE2AEE8F /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */; };
+		CD632D028989B318993AE032F9E69EB3 /* Pods-JuliaImagePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 352A3722BDC74EDA24D9378B60BA713C /* Pods-JuliaImagePicker_Example-dummy.m */; };
+		CEE1A6E1B719208A1E451D11B6362261 /* JuliaImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83476D91ED484E65D1AB4C7DE4768652 /* JuliaImagePicker-dummy.m */; };
+		CEF7EB4EE65D7FD09295C66138189C03 /* JuliaImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4330696890BF2EE1292E638EDC061DDE /* JuliaImageFetcher.swift */; };
+		EEA7B2B1C772ACA84CAD301A6CA10055 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5005C0E2ECD6607616AA7612D9924F9 /* JuliaImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16CDCB0CD3309EE307DC7A75E89B9D /* JuliaImageCell.swift */; };
+		FC47D5E5A501BB7B3444B2005080BD6C /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */; };
+		FE8E05F733B12ADDCF973FC967CFFD10 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09CD56F98CBE1F5CD671A21714B38039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D2A01DDE6CDED1E1DB006EC2FFF0AEC;
+			remoteInfo = JuliaImagePicker;
+		};
+		20ABD5A79FBAA33731AFC76B80F1C75F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		3B20DA07C184531433F7B16F2943283F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		4BD97410E450641C19EFA72D16077E76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63685D32DC34376E26DBB5FCC6476546;
+			remoteInfo = "Pods-JuliaImagePicker_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002E67BB5C071F6F759AD24B48983BA2 /* Pods-JuliaImagePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JuliaImagePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Sources/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
+		0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
+		0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
+		0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		1603C0E92AF0AA3B00B7B007 /* JuliaImagePickerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JuliaImagePickerConfig.swift; path = JuliaImagePicker/Classes/JuliaImagePickerConfig.swift; sourceTree = "<group>"; };
+		1603C0EB2AF0AB0D00B7B007 /* JuliaImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JuliaImagePickerView.swift; path = JuliaImagePicker/Classes/JuliaImagePickerView.swift; sourceTree = "<group>"; };
+		1603C0ED2AF0ABF300B7B007 /* JuliaPhotosAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuliaPhotosAccess.swift; sourceTree = "<group>"; };
+		1603C0EF2AF0ACA300B7B007 /* JuliaSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuliaSourceManager.swift; sourceTree = "<group>"; };
+		1603C0F12AF0ACCF00B7B007 /* JuliaSourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuliaSourceItem.swift; sourceTree = "<group>"; };
+		193B535C5FA6EE6343A79963BF93FD98 /* Pods-JuliaImagePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JuliaImagePicker_Example.modulemap"; sourceTree = "<group>"; };
+		1F93DAB4A9897FBF3FC3CBFC5E9F5515 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2512A793E3BCDCA119AD293030996CDE /* Pods-JuliaImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuliaImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2631D9046C896D21C6CBCE79C6EA0D04 /* JuliaImagePicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JuliaImagePicker; path = JuliaImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
+		2D1770DD8DFCA719508FB6FE18D4BF6E /* Pods-JuliaImagePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuliaImagePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		352A3722BDC74EDA24D9378B60BA713C /* Pods-JuliaImagePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JuliaImagePicker_Example-dummy.m"; sourceTree = "<group>"; };
+		38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
+		39EB0C117B78CDE911EA67B316D0310B /* Pods-JuliaImagePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JuliaImagePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		421350DD0F7C99C54D69E21EC31DE1CC /* Pods-JuliaImagePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JuliaImagePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4228346A947AE74574446328D0A2E3F1 /* Pods-JuliaImagePicker_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JuliaImagePicker_Tests"; path = Pods_JuliaImagePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4330696890BF2EE1292E638EDC061DDE /* JuliaImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JuliaImageFetcher.swift; path = JuliaImagePicker/Classes/JuliaImageFetcher.swift; sourceTree = "<group>"; };
+		458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
+		4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		4D16CDCB0CD3309EE307DC7A75E89B9D /* JuliaImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JuliaImageCell.swift; path = JuliaImagePicker/Classes/JuliaImageCell.swift; sourceTree = "<group>"; };
+		5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Sources/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
+		5593C5B6E9712D316222DD5711E76079 /* Pods-JuliaImagePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JuliaImagePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
+		592A4104FB2E72923B39B4E0EE449546 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		66BD746CD0F9070D057AA02CE59D123F /* JuliaImagePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JuliaImagePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6BDB21221AC32A3271BE8E1C9E28EDE6 /* Pods-JuliaImagePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuliaImagePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		7C39275F0713AEED673F5982D7DF19CC /* Pods-JuliaImagePicker_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JuliaImagePicker_Example"; path = Pods_JuliaImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		829280C66098FFD72AA40B6C04CE91B1 /* Pods-JuliaImagePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JuliaImagePicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		83476D91ED484E65D1AB4C7DE4768652 /* JuliaImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JuliaImagePicker-dummy.m"; sourceTree = "<group>"; };
+		89C5C15D6FC2A37FCA585EB14891ADB3 /* Pods-JuliaImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuliaImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8DE608B01BB63242DFED9892BADA025F /* JuliaImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuliaImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		94E42FA589867A878EC039323DA40B7F /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPrioritizable.swift; path = Sources/ConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
+		A6723A87D70141E9D3E42B85664AB6A3 /* JuliaPrototypeImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JuliaPrototypeImageCell.swift; path = JuliaImagePicker/Classes/JuliaPrototypeImageCell.swift; sourceTree = "<group>"; };
+		A8D9F5BEA32804BB59BB449A28B70D90 /* Pods-JuliaImagePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JuliaImagePicker_Tests.modulemap"; sourceTree = "<group>"; };
+		AAD203D2F71B5307B7C8E3CB4240C598 /* JuliaImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuliaImagePicker.release.xcconfig; sourceTree = "<group>"; };
+		ADDC6A45B1456B8DA4F2F58601573168 /* Pods-JuliaImagePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuliaImagePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
+		B65A7C892619DECA4D2142A700FA428E /* JuliaImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JuliaImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		B699F5617858ECF4FE7B2E934C213AC7 /* JuliaImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JuliaImagePicker.modulemap; sourceTree = "<group>"; };
+		B9F4B71775A3966FC9EBF36988A07A28 /* Pods-JuliaImagePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JuliaImagePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		BDF6E18B5372A4BBE8507FE4B9F165C0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Sources/ConstraintInsets.swift; sourceTree = "<group>"; };
+		C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Sources/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D2FD9EFCFC3AA452137876B761FFB621 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		D9728E3DC027EB51E916E3627A43BEE1 /* JuliaImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuliaImagePicker.debug.xcconfig; sourceTree = "<group>"; };
+		DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
+		DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
+		E6B4C33B230DF5BCE66654556396613C /* Pods-JuliaImagePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuliaImagePicker_Tests-Info.plist"; sourceTree = "<group>"; };
+		EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		F2D20CAD76D3EF0053319A9EBB3B801F /* Pods-JuliaImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JuliaImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
+		F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		FAA88977DCB53850E066E5AB994FC8C7 /* JuliaImagePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JuliaImagePicker-Info.plist"; sourceTree = "<group>"; };
+		FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		FFE680D420048874FBE6CA242F7AE8CF /* Pods-JuliaImagePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JuliaImagePicker_Example-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36C9F998667DF9DFC9D9E0F5B3D812A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD758506735C70BD414489A6AA1BB71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D3E15D56DB547FBC49A4B4D8D4BC1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CBF128245373CB66B69D14F1E4BB63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3188B74B096CB8A753B07B4839CD04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FBC3A75F09480A3FBAB65EA26F65A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4DA1CA7A923F88EA55E04DAE45DBB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA71C3626607E1162EAC02FBE58C42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0BFA9158F488F264B221D83F82E698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2631D9046C896D21C6CBCE79C6EA0D04 /* JuliaImagePicker */,
+				7C39275F0713AEED673F5982D7DF19CC /* Pods-JuliaImagePicker_Example */,
+				4228346A947AE74574446328D0A2E3F1 /* Pods-JuliaImagePicker_Tests */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3271DA660D92AC70A8A67F21A342AD41 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BABC035FD6FBA888789A4F68B91F01E /* Pods-JuliaImagePicker_Example */,
+				55C5044634F14004B08034ECD95F66DE /* Pods-JuliaImagePicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3FC3B5E253116623607286C8A8EC386A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C624DA85E4C906A424043F45FC718C86 /* JuliaImagePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		403EB05A3920652EED411213C52E3AC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E42FA589867A878EC039323DA40B7F /* SnapKit.modulemap */,
+				143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */,
+				D2FD9EFCFC3AA452137876B761FFB621 /* SnapKit-Info.plist */,
+				BDF6E18B5372A4BBE8507FE4B9F165C0 /* SnapKit-prefix.pch */,
+				932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */,
+				0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */,
+				782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		55C5044634F14004B08034ECD95F66DE /* Pods-JuliaImagePicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9F5BEA32804BB59BB449A28B70D90 /* Pods-JuliaImagePicker_Tests.modulemap */,
+				5593C5B6E9712D316222DD5711E76079 /* Pods-JuliaImagePicker_Tests-acknowledgements.markdown */,
+				6BDB21221AC32A3271BE8E1C9E28EDE6 /* Pods-JuliaImagePicker_Tests-acknowledgements.plist */,
+				829280C66098FFD72AA40B6C04CE91B1 /* Pods-JuliaImagePicker_Tests-dummy.m */,
+				E6B4C33B230DF5BCE66654556396613C /* Pods-JuliaImagePicker_Tests-Info.plist */,
+				B9F4B71775A3966FC9EBF36988A07A28 /* Pods-JuliaImagePicker_Tests-umbrella.h */,
+				ADDC6A45B1456B8DA4F2F58601573168 /* Pods-JuliaImagePicker_Tests.debug.xcconfig */,
+				2512A793E3BCDCA119AD293030996CDE /* Pods-JuliaImagePicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-JuliaImagePicker_Tests";
+			path = "Target Support Files/Pods-JuliaImagePicker_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		72E134FEECC3E0FB5588BC877927B14E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B699F5617858ECF4FE7B2E934C213AC7 /* JuliaImagePicker.modulemap */,
+				83476D91ED484E65D1AB4C7DE4768652 /* JuliaImagePicker-dummy.m */,
+				FAA88977DCB53850E066E5AB994FC8C7 /* JuliaImagePicker-Info.plist */,
+				8DE608B01BB63242DFED9892BADA025F /* JuliaImagePicker-prefix.pch */,
+				B65A7C892619DECA4D2142A700FA428E /* JuliaImagePicker-umbrella.h */,
+				D9728E3DC027EB51E916E3627A43BEE1 /* JuliaImagePicker.debug.xcconfig */,
+				AAD203D2F71B5307B7C8E3CB4240C598 /* JuliaImagePicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JuliaImagePicker";
+			sourceTree = "<group>";
+		};
+		7BABC035FD6FBA888789A4F68B91F01E /* Pods-JuliaImagePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				193B535C5FA6EE6343A79963BF93FD98 /* Pods-JuliaImagePicker_Example.modulemap */,
+				421350DD0F7C99C54D69E21EC31DE1CC /* Pods-JuliaImagePicker_Example-acknowledgements.markdown */,
+				2D1770DD8DFCA719508FB6FE18D4BF6E /* Pods-JuliaImagePicker_Example-acknowledgements.plist */,
+				352A3722BDC74EDA24D9378B60BA713C /* Pods-JuliaImagePicker_Example-dummy.m */,
+				002E67BB5C071F6F759AD24B48983BA2 /* Pods-JuliaImagePicker_Example-frameworks.sh */,
+				FFE680D420048874FBE6CA242F7AE8CF /* Pods-JuliaImagePicker_Example-Info.plist */,
+				39EB0C117B78CDE911EA67B316D0310B /* Pods-JuliaImagePicker_Example-umbrella.h */,
+				89C5C15D6FC2A37FCA585EB14891ADB3 /* Pods-JuliaImagePicker_Example.debug.xcconfig */,
+				F2D20CAD76D3EF0053319A9EBB3B801F /* Pods-JuliaImagePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-JuliaImagePicker_Example";
+			path = "Target Support Files/Pods-JuliaImagePicker_Example";
+			sourceTree = "<group>";
+		};
+		A5B94EAA89F531C325191D8CD85E93CB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				66BD746CD0F9070D057AA02CE59D123F /* JuliaImagePicker.podspec */,
+				1F93DAB4A9897FBF3FC3CBFC5E9F5515 /* LICENSE */,
+				592A4104FB2E72923B39B4E0EE449546 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C624DA85E4C906A424043F45FC718C86 /* JuliaImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4D16CDCB0CD3309EE307DC7A75E89B9D /* JuliaImageCell.swift */,
+				4330696890BF2EE1292E638EDC061DDE /* JuliaImageFetcher.swift */,
+				A6723A87D70141E9D3E42B85664AB6A3 /* JuliaPrototypeImageCell.swift */,
+				1603C0E92AF0AA3B00B7B007 /* JuliaImagePickerConfig.swift */,
+				1603C0EB2AF0AB0D00B7B007 /* JuliaImagePickerView.swift */,
+				1603C0ED2AF0ABF300B7B007 /* JuliaPhotosAccess.swift */,
+				1603C0EF2AF0ACA300B7B007 /* JuliaSourceManager.swift */,
+				1603C0F12AF0ACCF00B7B007 /* JuliaSourceItem.swift */,
+				A5B94EAA89F531C325191D8CD85E93CB /* Pod */,
+				72E134FEECC3E0FB5588BC877927B14E /* Support Files */,
+			);
+			name = JuliaImagePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3FC3B5E253116623607286C8A8EC386A /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FBE859397B27E4FC4D81B6F5DD24B6F6 /* Pods */,
+				0F0BFA9158F488F264B221D83F82E698 /* Products */,
+				3271DA660D92AC70A8A67F21A342AD41 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D29D3F332511F02C2A2BCFE5288B22D5 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */,
+				5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */,
+				DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */,
+				C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */,
+				54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */,
+				BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */,
+				7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */,
+				02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */,
+				C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */,
+				FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */,
+				26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */,
+				F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */,
+				E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */,
+				C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */,
+				BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */,
+				5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */,
+				0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */,
+				F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */,
+				DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */,
+				412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */,
+				9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */,
+				4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */,
+				583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */,
+				00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */,
+				751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */,
+				B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */,
+				7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */,
+				3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */,
+				E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */,
+				458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */,
+				C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */,
+				0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */,
+				F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */,
+				38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */,
+				EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */,
+				960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */,
+				152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */,
+				403EB05A3920652EED411213C52E3AC2 /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		FBE859397B27E4FC4D81B6F5DD24B6F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D29D3F332511F02C2A2BCFE5288B22D5 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		23E4574344695EF2E757A27B9E142F4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F40475B6F00B584019CC253C9C25BE /* JuliaImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89F49759A6A4B9DE57237E50EBA5E2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2044593CA1D09886AFC660A6D7D614C2 /* Pods-JuliaImagePicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC61EF8F6B77BB5C97B4591135AE76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B04A30C7898754D0DFEC1C19799BFD /* Pods-JuliaImagePicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB117094B9EE23FEE94798D5218A6F95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA7B2B1C772ACA84CAD301A6CA10055 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9416D0FF99DC3EA08774ABDA2C004A3E /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				DB117094B9EE23FEE94798D5218A6F95 /* Headers */,
+				6FA5395CB1EC9B3A71D96B015E731913 /* Sources */,
+				36C9F998667DF9DFC9D9E0F5B3D812A2 /* Frameworks */,
+				F24CFD86CFCA92B0006D609DD0E3A022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D2A01DDE6CDED1E1DB006EC2FFF0AEC /* JuliaImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2168EEB03DCE3F9CB5F1275D33C99E0 /* Build configuration list for PBXNativeTarget "JuliaImagePicker" */;
+			buildPhases = (
+				23E4574344695EF2E757A27B9E142F4A /* Headers */,
+				E93639B27D92AEE5C414D74A53DF52C3 /* Sources */,
+				EC4DA1CA7A923F88EA55E04DAE45DBB5 /* Frameworks */,
+				C7B2C126A97D039A1B0C53619C0E560D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF39C553A765E6986C02DEAC41C7165E /* PBXTargetDependency */,
+			);
+			name = JuliaImagePicker;
+			productName = JuliaImagePicker;
+			productReference = 2631D9046C896D21C6CBCE79C6EA0D04 /* JuliaImagePicker */;
+			productType = "com.apple.product-type.framework";
+		};
+		63685D32DC34376E26DBB5FCC6476546 /* Pods-JuliaImagePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 397513294E3B60AA3F60EFAEE58E6DE3 /* Build configuration list for PBXNativeTarget "Pods-JuliaImagePicker_Example" */;
+			buildPhases = (
+				CEDC61EF8F6B77BB5C97B4591135AE76 /* Headers */,
+				D55146DB886EB1FAF02DA04C51C9049A /* Sources */,
+				DB3188B74B096CB8A753B07B4839CD04 /* Frameworks */,
+				A77262AB8A3D3FF9900EA7C96C14B660 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BC53FD9FBF4CE8DE15994B6756B2AC /* PBXTargetDependency */,
+				2285C640EDB405D56A6CFEEC9080A8D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-JuliaImagePicker_Example";
+			productName = Pods_JuliaImagePicker_Example;
+			productReference = 7C39275F0713AEED673F5982D7DF19CC /* Pods-JuliaImagePicker_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A09C63D003E08C0D3CB81514BA53958 /* Pods-JuliaImagePicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EAE786AF4C38498D01577A4B5071B6 /* Build configuration list for PBXNativeTarget "Pods-JuliaImagePicker_Tests" */;
+			buildPhases = (
+				A89F49759A6A4B9DE57237E50EBA5E2C /* Headers */,
+				752DF3320E2963AD809221604B77C691 /* Sources */,
+				7D3E15D56DB547FBC49A4B4D8D4BC1A5 /* Frameworks */,
+				270110551E67107DD5B75B24C877C7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F510B63D169B222D4AAFCCD90A965B23 /* PBXTargetDependency */,
+			);
+			name = "Pods-JuliaImagePicker_Tests";
+			productName = Pods_JuliaImagePicker_Tests;
+			productReference = 4228346A947AE74574446328D0A2E3F1 /* Pods-JuliaImagePicker_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0F0BFA9158F488F264B221D83F82E698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D2A01DDE6CDED1E1DB006EC2FFF0AEC /* JuliaImagePicker */,
+				63685D32DC34376E26DBB5FCC6476546 /* Pods-JuliaImagePicker_Example */,
+				8A09C63D003E08C0D3CB81514BA53958 /* Pods-JuliaImagePicker_Tests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270110551E67107DD5B75B24C877C7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77262AB8A3D3FF9900EA7C96C14B660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B2C126A97D039A1B0C53619C0E560D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24CFD86CFCA92B0006D609DD0E3A022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FA5395CB1EC9B3A71D96B015E731913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7554717C3FD530A4B54F93460E4908A1 /* Constraint.swift in Sources */,
+				2AF6F8C323A0E4460356BD83E5DC3ECD /* ConstraintAttributes.swift in Sources */,
+				11D1BC4CA325A205E9C067C354983423 /* ConstraintConfig.swift in Sources */,
+				A9E289E1A234390862E7AA8EAB18CBD3 /* ConstraintConstantTarget.swift in Sources */,
+				0A02F15E151ACAB703BA62636CD01DB8 /* ConstraintDescription.swift in Sources */,
+				598B47CCCB6487274D7549C32B229F08 /* ConstraintDirectionalInsets.swift in Sources */,
+				83E54C6B16F02E22467B5E1F71A2C9D3 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				6348AD600A66B4F9B5192EFEE0B44264 /* ConstraintDSL.swift in Sources */,
+				8C8B3393BADEEF9788DBCB5138B7399A /* ConstraintInsets.swift in Sources */,
+				491A3C1FA02D7F4C93F796E52183F8C3 /* ConstraintInsetTarget.swift in Sources */,
+				31C54B4088DB77E2A6E407EDF800A780 /* ConstraintItem.swift in Sources */,
+				CBBF1F2473FC24B3F6F03509CE2AEE8F /* ConstraintLayoutGuide.swift in Sources */,
+				0A614D3DC7E933F81BD932A244636A55 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				0E7FE25865E3672A2848D7E2094D2E6B /* ConstraintLayoutGuideDSL.swift in Sources */,
+				3E97BB392AECDEDD9138C85EBD8D978E /* ConstraintLayoutSupport.swift in Sources */,
+				6FFBFA924D31AE74A27332BB7CA5FE2D /* ConstraintLayoutSupportDSL.swift in Sources */,
+				83E567E6ED929A355A04D88BC05B6543 /* ConstraintMaker.swift in Sources */,
+				3F007FDF4DFFA1071492CC47F0EC3E50 /* ConstraintMakerEditable.swift in Sources */,
+				0226EDF1150003E5181FD62EDF9DD8F8 /* ConstraintMakerExtendable.swift in Sources */,
+				FE8E05F733B12ADDCF973FC967CFFD10 /* ConstraintMakerFinalizable.swift in Sources */,
+				4D32062F3E04E67CA7B64E2A2890ABD2 /* ConstraintMakerPrioritizable.swift in Sources */,
+				66CC7A589741E704372BB17F025BE728 /* ConstraintMakerRelatable.swift in Sources */,
+				56240FFBB993B17469D6D5B989562B6C /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				7F800B20AE494083D2C9A45EEEE6B9C0 /* ConstraintMultiplierTarget.swift in Sources */,
+				A2C719A5B0F6D74847B9B81DFB8800E1 /* ConstraintOffsetTarget.swift in Sources */,
+				11B849C81E53C1039AE21D157342E0C2 /* ConstraintPriority.swift in Sources */,
+				8646AF71AD364F51C37A9244364665C3 /* ConstraintPriorityTarget.swift in Sources */,
+				A39689793D52CF6E98AD4DA9D8E9F96A /* ConstraintRelatableTarget.swift in Sources */,
+				B588E988099F30C3A7ED930F153AF7D6 /* ConstraintRelation.swift in Sources */,
+				56A9451392F1128905162D556063E42C /* ConstraintView.swift in Sources */,
+				FC47D5E5A501BB7B3444B2005080BD6C /* ConstraintView+Extensions.swift in Sources */,
+				5A9E20B47CB5FD375F845F5ED27DBF1E /* ConstraintViewDSL.swift in Sources */,
+				0B81429FFC8D7AE65F0007F7EE986407 /* Debugging.swift in Sources */,
+				5581EE2D260D4451307D34546C947FB9 /* LayoutConstraint.swift in Sources */,
+				674373FC45AF6B4576B904E51023446C /* LayoutConstraintItem.swift in Sources */,
+				35285506203A72F6EC81A1AF71B182E3 /* SnapKit-dummy.m in Sources */,
+				26316253F6DE72C3370636CF4ADD63B3 /* Typealiases.swift in Sources */,
+				7CF2EFD331C0E1D5322C5C66802C5BBC /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752DF3320E2963AD809221604B77C691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838CD2C6E8751A3D3753A7E4B881D860 /* Pods-JuliaImagePicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55146DB886EB1FAF02DA04C51C9049A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD632D028989B318993AE032F9E69EB3 /* Pods-JuliaImagePicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93639B27D92AEE5C414D74A53DF52C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5005C0E2ECD6607616AA7612D9924F9 /* JuliaImageCell.swift in Sources */,
+				CEF7EB4EE65D7FD09295C66138189C03 /* JuliaImageFetcher.swift in Sources */,
+				1603C0F22AF0ACCF00B7B007 /* JuliaSourceItem.swift in Sources */,
+				1603C0EC2AF0AB0D00B7B007 /* JuliaImagePickerView.swift in Sources */,
+				CEE1A6E1B719208A1E451D11B6362261 /* JuliaImagePicker-dummy.m in Sources */,
+				1603C0F02AF0ACA300B7B007 /* JuliaSourceManager.swift in Sources */,
+				1603C0EA2AF0AA3B00B7B007 /* JuliaImagePickerConfig.swift in Sources */,
+				1603C0EE2AF0ABF300B7B007 /* JuliaPhotosAccess.swift in Sources */,
+				12DE95BEEF871D0945B29BF35A6D3D11 /* JuliaPrototypeImageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2285C640EDB405D56A6CFEEC9080A8D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 3B20DA07C184531433F7B16F2943283F /* PBXContainerItemProxy */;
+		};
+		67BC53FD9FBF4CE8DE15994B6756B2AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JuliaImagePicker;
+			target = 4D2A01DDE6CDED1E1DB006EC2FFF0AEC /* JuliaImagePicker */;
+			targetProxy = 09CD56F98CBE1F5CD671A21714B38039 /* PBXContainerItemProxy */;
+		};
+		F510B63D169B222D4AAFCCD90A965B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JuliaImagePicker_Example";
+			target = 63685D32DC34376E26DBB5FCC6476546 /* Pods-JuliaImagePicker_Example */;
+			targetProxy = 4BD97410E450641C19EFA72D16077E76 /* PBXContainerItemProxy */;
+		};
+		FF39C553A765E6986C02DEAC41C7165E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 20ABD5A79FBAA33731AFC76B80F1C75F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6BC1AC4DEE410C58A728FF40F5101CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D20CAD76D3EF0053319A9EBB3B801F /* Pods-JuliaImagePicker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JuliaImagePicker_Example/Pods-JuliaImagePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuliaImagePicker_Example/Pods-JuliaImagePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F8A370E447A5EEC7A2FEC9608353F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD203D2F71B5307B7C8E3CB4240C598 /* JuliaImagePicker.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JuliaImagePicker/JuliaImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JuliaImagePicker/JuliaImagePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JuliaImagePicker/JuliaImagePicker.modulemap";
+				PRODUCT_MODULE_NAME = JuliaImagePicker;
+				PRODUCT_NAME = JuliaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E21834FA3AA08F90E97833A4554538E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDC6A45B1456B8DA4F2F58601573168 /* Pods-JuliaImagePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JuliaImagePicker_Tests/Pods-JuliaImagePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuliaImagePicker_Tests/Pods-JuliaImagePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B3A638B93DD270640EAFBD0603256267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9728E3DC027EB51E916E3627A43BEE1 /* JuliaImagePicker.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JuliaImagePicker/JuliaImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JuliaImagePicker/JuliaImagePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JuliaImagePicker/JuliaImagePicker.modulemap";
+				PRODUCT_MODULE_NAME = JuliaImagePicker;
+				PRODUCT_NAME = JuliaImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B50D990646B57D7FE60FDA1DD315E140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2512A793E3BCDCA119AD293030996CDE /* Pods-JuliaImagePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JuliaImagePicker_Tests/Pods-JuliaImagePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuliaImagePicker_Tests/Pods-JuliaImagePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9E15FFB70DF8DAFA56CF71D99EF69C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4A4736826467B164B813FDED734708D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C5C15D6FC2A37FCA585EB14891ADB3 /* Pods-JuliaImagePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JuliaImagePicker_Example/Pods-JuliaImagePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JuliaImagePicker_Example/Pods-JuliaImagePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCF8B45931CD96D7C08DD50C99CFBC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		397513294E3B60AA3F60EFAEE58E6DE3 /* Build configuration list for PBXNativeTarget "Pods-JuliaImagePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A4736826467B164B813FDED734708D /* Debug */,
+				6BC1AC4DEE410C58A728FF40F5101CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9416D0FF99DC3EA08774ABDA2C004A3E /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCF8B45931CD96D7C08DD50C99CFBC98 /* Debug */,
+				C9E15FFB70DF8DAFA56CF71D99EF69C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EAE786AF4C38498D01577A4B5071B6 /* Build configuration list for PBXNativeTarget "Pods-JuliaImagePicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E21834FA3AA08F90E97833A4554538E /* Debug */,
+				B50D990646B57D7FE60FDA1DD315E140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2168EEB03DCE3F9CB5F1275D33C99E0 /* Build configuration list for PBXNativeTarget "JuliaImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A638B93DD270640EAFBD0603256267 /* Debug */,
+				7F8A370E447A5EEC7A2FEC9608353F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

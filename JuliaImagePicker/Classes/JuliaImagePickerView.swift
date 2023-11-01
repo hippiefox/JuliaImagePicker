@@ -1,0 +1,115 @@
+//
+//  JuliaImagePickerView.swift
+//  JuliaImagePicker
+//
+//  Created by pulei yu on 2023/10/31.
+//
+
+import Foundation
+import Photos
+
+open class JuliaImagePickerView: UIView {
+    public var authFailedBlock: (() -> Void)?
+    public var choosingBlock: ((Set<PHAsset>) -> Void)?
+
+    public lazy var collectionView: UICollectionView = {
+        let layout = JuliaImagePickerConfig.layout(within: UIScreen.main.bounds.width)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.alwaysBounceVertical = true
+        collectionView.backgroundColor = .white
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(JuliaImageCell.self, forCellWithReuseIdentifier: "JuliaImageCell")
+        return collectionView
+    }()
+
+    private weak var relatedVC: UIViewController?
+    public init(relatedVC: UIViewController) {
+        super.init(frame: .zero)
+        self.relatedVC = relatedVC
+        addSubview(collectionView)
+        collectionView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        requestAccess()
+    }
+
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    public var assets: [PHAsset] = []
+    public var selectedAssets: Set<PHAsset> = []
+    public func reloadUI() {
+        collectionView.reloadData()
+    }
+
+    private func requestAccess() {
+        JuliaPhotosAccess.request(from: relatedVC) { isAuthed in
+            if isAuthed {
+                self.fetchPhotos()
+            } else {
+                self.authFailedBlock?()
+            }
+        }
+    }
+
+    public lazy var fetchOptions: PHFetchOptions = {
+        let opt = PHFetchOptions()
+        opt.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        return opt
+    }()
+
+    private func fetchPhotos() {
+        JuliaImageFetcher.default.fetchAssets(to: JuliaImagePickerConfig.fetchPageSize)
+        assets = JuliaImageFetcher.default.assets
+        collectionView.reloadData()
+    }
+
+    private func fetchNextPageIfNeeded(indexPath: IndexPath) {
+        // 触发到最后一个再去加载下一屏
+        guard indexPath.item == assets.count - 1 else { return }
+
+        let oldFetchLimit = assets.count
+        let targetLimit = oldFetchLimit + JuliaImagePickerConfig.fetchPageSize
+        JuliaImageFetcher.default.fetchAssets(to: targetLimit)
+        assets = JuliaImageFetcher.default.assets
+        var newIndexPaths: [IndexPath] = []
+        for item in oldFetchLimit ..< assets.count {
+            newIndexPaths.append(.init(item: item, section: 0))
+        }
+        collectionView.insertItems(at: newIndexPaths)
+    }
+
+    deinit {
+        JLLogImagePicker("------>deinit", self.classForCoder.description())
+    }
+}
+
+extension JuliaImagePickerView: UICollectionViewDataSource, UICollectionViewDelegate {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        assets.count
+    }
+
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        fetchNextPageIfNeeded(indexPath: indexPath)
+        let ast = assets[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "JuliaImageCell", for: indexPath) as! JuliaImageCell
+        cell.asset = ast
+        cell.isChoosed = selectedAssets.contains(ast)
+        return cell
+    }
+
+    open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let ast = assets[indexPath.item]
+        if let index = selectedAssets.firstIndex(of: ast) {
+            // 删除
+            selectedAssets.remove(at: index)
+        } else {
+            // 插入
+            selectedAssets.insert(ast)
+        }
+        collectionView.reloadData()
+        choosingBlock?(selectedAssets)
+    }
+}

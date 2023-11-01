@@ -1,0 +1,23 @@
+PODS:
+  - JuliaImagePicker (0.1.0):
+    - SnapKit
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - JuliaImagePicker (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JuliaImagePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JuliaImagePicker: 1f3d95c810947a88653246c9646563c58e000f82
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 6c2016819a6348f431994e3c8c9fab74b49d7181
+
+COCOAPODS: 1.13.0
